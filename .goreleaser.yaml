@@ -8,7 +8,7 @@ builds:
       - linux
       - windows
       - darwin
-    main: traction/main.go
+    main: main.go
 archives:
   - replacements:
       darwin: Darwin
