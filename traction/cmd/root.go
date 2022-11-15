@@ -1,7 +1,6 @@
 package cmd
 
 import (
-	"fmt"
 	"os"
 
 	"github.com/spf13/cobra"
@@ -46,8 +45,5 @@ func initConfig() {
 	}
 
 	viper.AutomaticEnv()
-
-	if err := viper.ReadInConfig(); err != nil {
-		fmt.Println(err)
-	}
+	viper.ReadInConfig()
 }
