@@ -26,3 +26,8 @@ changelog:
     exclude:
       - '^docs:'
       - '^test:'
+
+brews:
+  - tap:
+      owner: panbanda
+      name: traction-cli-tap
