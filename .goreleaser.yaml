@@ -31,3 +31,4 @@ brews:
   - tap:
       owner: panbanda
       name: traction-cli-tap
+    license: "MIT"
