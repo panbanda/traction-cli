@@ -28,6 +28,7 @@ func init() {
 	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.traction.yaml)")
 
 	rootCmd.AddCommand(loginCmd)
+	rootCmd.AddCommand(todoCmd)
 }
 
 func initConfig() {

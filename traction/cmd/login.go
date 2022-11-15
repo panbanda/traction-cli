@@ -17,7 +17,7 @@ import (
 
 type tokenResponse struct {
 	AccessToken    string `json:"access_token"`
-	ExpiresIn      int    `json:"expires_in"`
+	ExpiresAt      string `json:".expires"`
 	Username       string `json:"userName"`
 	OrganizationID int    `json:"organization_id"`
 	UserID         int    `json:"user_id"`
@@ -84,7 +84,8 @@ var loginCmd = &cobra.Command{
 			log.Fatalln(err)
 		}
 
-		viper.Set("token", payload.AccessToken)
+		viper.Set("auth.token", payload.AccessToken)
+		viper.Set("auth.expires_at", payload.ExpiresAt)
 		viper.Set("user.id", payload.UserID)
 		viper.Set("user.name", payload.Username)
 		viper.Set("organization.id", payload.OrganizationID)
