@@ -1,2 +1,3 @@
-# traction-cli
-Traction tools CLI
+# Traction CLI
+
+Traction tools CLI for managing your traction tools account on bloomgrowth.com
