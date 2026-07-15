@@ -1,11 +1,11 @@
 module github.com/panbanda/traction-cli
 
-go 1.19
+go 1.21
 
 require (
 	github.com/fatih/color v1.13.0
 	github.com/manifoldco/promptui v0.9.0
-	github.com/rodaine/table v1.0.1
+	github.com/rodaine/table v1.3.1
 	github.com/spf13/cobra v1.6.1
 	github.com/spf13/viper v1.14.0
 )
